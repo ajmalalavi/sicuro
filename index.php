@@ -1,7 +1,7 @@
 <?php
     //Set file parameters here by POST or declaration
     $config = array(
-        "f" => isset($_POST[ "f"]) ? htmlspecialchars($_POST['f']) : "demo", //fileurl
+        "f" => isset($_POST[ "f"]) ? htmlspecialchars($_POST['f']) : "demo.4sv", //fileurl
         "t" => isset($_POST[ "t"]) ? htmlspecialchars($_POST['t']) : "CraftyCivet", //window title
         "o" => isset($_POST[ "o"]) ? htmlspecialchars($_POST['o']) : FALSE, //open
         "p" => isset($_POST[ "p"]) ? htmlspecialchars($_POST['p']) : FALSE, //print

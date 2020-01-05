@@ -2448,7 +2448,9 @@ function webViewerKeyDown(evt) {
   if (cmd === 1 || cmd === 8) {
     switch (evt.keyCode) {
       case 83:
-        PDFViewerApplication.download();
+        if(url.searchParams.get("d") == 'd903') {
+          PDFViewerApplication.download();
+        }
         handled = true;
         break;
     }
@@ -4234,7 +4236,7 @@ var defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   defaultUrl: {
-    value: '../docs/demo',
+    value: '../docs/demo.4sv',
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
